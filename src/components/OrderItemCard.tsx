@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { ORDER_STATUS } from "../../config/order-status-config";
+import { ORDER_STATUS } from "../config/order-status-config";
 import { useUpdateMyRestaurantOrder } from "@/api/myRestaurantApi";
 import { useEffect, useState } from "react";
 
