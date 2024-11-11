@@ -120,7 +120,7 @@ export const useGetMyRestaurantOrders = () => {
   const getMyRestaurantOrdersRequest = async (): Promise<Order[]> => {
     const accessToken = await getAccessTokenSilently();
 
-    const response = await fetch(`${API_BASE_URL}/api/my/restaurant/order`, {
+    const response = await fetch(`${API_BASE_URL}/api/my/resturant/order`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
@@ -156,7 +156,7 @@ export const useUpdateMyRestaurantOrder = () => {
     const accessToken = await getAccessTokenSilently();
 
     const response = await fetch(
-      `${API_BASE_URL}/api/my/restaurant/order/${updateStatusOrderRequest.orderId}/status`,
+      `${API_BASE_URL}/api/my/resturant/order/${updateStatusOrderRequest.orderId}/status`,
       {
         method: "PATCH",
         headers: {
